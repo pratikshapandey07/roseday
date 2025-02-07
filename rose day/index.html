@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="thorns">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="rose-leaves">
+            <div></div>
+            <div></div>
+        </div>
+        <div class="rose-petals">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="sparkles">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <!-- Message Container -->
+    <div class="message-container" style="display: none;">
+        <div class="message" id="roseMessage">
+            🌹 Happy Rose Day, My Love! 🌹 <br>
+            Just like this rose, my love for you blooms endlessly! <br>
+            You are my sunshine, my heart, my forever. ❤️  
+        </div>
+    </div>
+
+    <!-- Surprise Button (Hidden Initially) -->
+    <button class="surprise" style="display: none;">Click for a Surprise</button>
+
+    <!-- JavaScript (Placed at the End) -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            setTimeout(function () {
+                document.querySelector(".message-container").style.display = "block";
+            }, 3000); // Show message after 3 seconds
+
+            setTimeout(function () {
+                let surpriseBtn = document.querySelector(".surprise");
+                surpriseBtn.style.display = "block"; // Make the button visible
+                surpriseBtn.addEventListener("click", function () {
+                    alert("I Love You sooooo Muchhhhhh ❤️");
+                });
+            }, 5000); // Show button after 5 seconds
+        });
+    </script>
+</body>
+</html>
